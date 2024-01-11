@@ -1,0 +1,158 @@
+body{
+    background-color: #DCDCDC;
+    margin: 0;
+}
+
+
+ul {
+    padding: 0;
+}
+
+p {
+    font-size: 18px;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-family: assistant;
+}
+h2 {
+    font-family: Lora;
+    font-size: 32px;
+}
+
+a{
+    color: #2493B3;
+    font-size: 16px;
+    font-family: assistant;
+    
+}
+
+.a-github, .a-website{
+    display: flex;
+    justify-content: space-around;
+}
+
+.heading{
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 400px;
+    background-color: #666666;
+    color: #DCDCDC;
+    margin-bottom: 150px;
+}
+
+.heading a{
+    color: #3CE6C1
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    border-bottom: 2px solid #47FF19;
+    width: 400px;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.heading h1, h2{
+    text-align: center;
+}
+
+#card ul li {
+    list-style: none;
+    font-size: 22px;
+    font-family: inter;
+}
+
+#card div img{
+    display: flex;
+    
+}
+
+#card-2 ul li {
+padding-right: 1em;
+}
+
+.checkmark{
+    margin-bottom: -5px;
+}
+
+#card img{
+    max-width: 330px;
+}
+
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+#card{
+    background-color: white;
+    padding: 15px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black ;
+    border-top: 2px solid #2493B3;
+    border-left: 2px solid #2493B3;
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px;
+    max-width: 450px;
+    width: 100%;
+    max-height: 950px;
+    margin: 0 auto;
+}
+
+
+#card div img{
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+footer{
+    margin-top: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #666666;
+    margin-left: 0;
+    width: 100%;
+    color: #DCDCDC;
+}
+
+footer a {
+    color: #3CE6C1;
+}
+
+@media only screen and(min-wdith: 800px) {
+
+
+
+    .cards{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;   
+        margin: 0 auto;
+    }
+
+    #card{
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-wdith: 770px) {
+    .card-img{
+        max-width: 330px;
+        max-height: 250px;
+    }
+
+    #card{
+        margin: 0 auto;
+        
+    }
+
+}
