@@ -1,12 +1,15 @@
 import React from "react";
 
-function Pizza(props) {
+function Pizza({ pizzaObj }) {
     return (
-        <div>
-            <img src={props.photoName} alt={props.name} />
-            <h3>{props.name}</h3>
-            <p>{props.ingredients}</p>
-        </div>
+        <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
+            <img src={pizzaObj.photoName} alt={pizzaObj.name} />
+            <div>
+                <h3>{pizzaObj.name}</h3>
+                <p>{pizzaObj.ingredients}</p>
+                <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
+            </div>
+        </li>
     );
 }
 
